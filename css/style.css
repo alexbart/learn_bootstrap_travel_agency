@@ -97,3 +97,13 @@ section {
         font-size: 1rem;
     }
 }
+
+footer a {
+    font-size: 1.25rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+footer a:hover {
+    color: #007bff; /* Bootstrap primary color */
+    transform: translateY(-3px);
+}
