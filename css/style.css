@@ -1,4 +1,6 @@
-/* Hero Section */
+/* =============================
+   Hero Section
+============================= */
 .hero {
     position: relative;
     height: 80vh;
@@ -23,7 +25,23 @@
     z-index: 2;
 }
 
-/* Card hover effect */
+@media (max-width: 768px) {
+    .hero .display-4 {
+        font-size: 2rem;
+    }
+    .hero p.lead {
+        font-size: 1rem;
+    }
+}
+
+/* =============================
+   Navbar (if any custom styles)
+============================= */
+/* Currently using default Bootstrap styling, no custom styles needed */
+
+/* =============================
+   Destinations Section
+============================= */
 .destination-card {
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -33,7 +51,16 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
-/* Contact Form Styling */
+/* =============================
+   Tours Section (Accordion)
+============================= */
+#tourAccordion .card {
+    margin-bottom: 1rem;
+}
+
+/* =============================
+   Contact Section
+============================= */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -65,37 +92,24 @@
     box-shadow: 0 5px 15px rgba(0,123,255,0.3);
 }
 
-
-/* Footer spacing */
-footer p {
-    margin: 0.2rem 0;
-}
-
-/* Smooth section padding */
-section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-/* Tours Accordion spacing */
-#tourAccordion .card {
-    margin-bottom: 1rem;
-}
-
-
+/* =============================
+   Buttons (general overrides)
+============================= */
 .btn-primary {
     border-radius: 50px;
     padding: 0.6rem 1.5rem;
 }
 
+/* =============================
+   Footer Section
+============================= */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+}
 
-@media (max-width: 768px) {
-    .hero .display-4 {
-        font-size: 2rem;
-    }
-    .hero p.lead {
-        font-size: 1rem;
-    }
+footer p {
+    margin: 0.2rem 0;
 }
 
 footer a {
@@ -106,4 +120,12 @@ footer a {
 footer a:hover {
     color: #007bff; /* Bootstrap primary color */
     transform: translateY(-3px);
+}
+
+/* =============================
+   General Section Spacing
+============================= */
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
